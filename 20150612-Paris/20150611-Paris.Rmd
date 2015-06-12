@@ -22,6 +22,7 @@ output:
 library(rmarkdown)
 library(knitr)
 library(ggplot2)
+library(gridExtra)
 library(estc)
 library(bibliographica)
 opts_chunk$set(cache=TRUE)
@@ -98,41 +99,8 @@ Load the data and tools in R:
 ```{r 20150611paris-init2, message=FALSE, eval=TRUE, cache=TRUE}
 load("df.RData")
 library(bibliographica)
-kable(t(df.orig[22495, ]))
 ```
 
-
-
-## Polishing page counts
-
-Raw page counts
-
-```{r 20150611paris-pagecount, message=FALSE}
-rawpages <- as.character(unique(df.orig[sample(nrow(df.orig), 6), "300.a-Extent"]))
-kable(rawpages)
-```
-
-
-Polish page counts 
-
-```{r 20150611paris-pageount3, message=FALSE}
-polish_pages(rawpages)$total.pages
-```
-
-
-## Document dimension field
-
-```{r 20150611paris-docdim1, message=FALSE}
-kable(as.character(sample(unique(df.orig[, "300.c-Dimensions"]), 6)))
-```
-
-## Polish document dimensions
-
-Pick dimension information
-
-```{r 20150611paris-docdim2, message=FALSE, warning=FALSE}
-kable(polish_dimensions("10 cm (12⁰)"))
-```
 
 ## Fill missing dimensions
 
@@ -143,40 +111,6 @@ kable(polish_dimensions("10 cm (12⁰)", fill = TRUE))
 ```
 
 
-
-## Publication place
-
-Many versions of London:
-
-```{r 20150611paris-pubplace2, message=FALSE}
-x <- as.character(df.orig[, "260.a-Place of publication"])
-top_plot(x[grep("London", x)], ntop = 20)
-```
-
-In total `r length(unique(x[grep("London", x)]))` unique places with the string
-London - tidying up and synonyme lists !
-
-
-## Ambiguous authors
-
-```{r 20150611paris-authors12, echo=FALSE, message=FALSE, warning=FALSE, fig.width=10, fig.height=8}
-a <- which(sapply(split(df$author.birth, df$author.name), function (x) {length(unique(x))}) > 2)
-dfa <- df[, c("author.name", "author.birth", "author.death")]
-dfa <- filter(dfa, !is.na(author.name) & (author.name %in% names(a)))
-dfa <- dfa[!duplicated(dfa), ]
-#dfa <- dfa[match(names(a), dfa$author.name),]
-dfa <- arrange(dfa, author.birth)
-# Order authors by birth year
-#dfa$author.name <- factor(dfa$author.name, levels = dfa$author.name)
-dfa$index <- sample(factor(1:nrow(dfa)))
-
-p <- ggplot(dfa)
-p <- p + geom_segment(aes(y = author.name, yend = author.name, x = author.birth, xend = author.death, color = index), size = 2) 
-p <- p + theme(axis.text.y = element_text(size = 9))
-p <- p + xlab("Author life span (year)") + ylab("")
-p <- p + guides(color = FALSE)
-print(p)
-```
 
 ## Author gender 
 
