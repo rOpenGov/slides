@@ -22,8 +22,8 @@ class: inverse, center, middle
 # Brief history
 
 - Started in 2010
-- Entry in Apps4Finland competition
-- Core team: Leo Lahti, Markus Kainu, Joona Lehtomäki, Juuso Paananen
+- Entry in Apps4Finland competition (as a winning team)
+- Core team: Leo Lahti, Markus Kainu, Joona Lehtomäki, Juuso Parkkinen
 
 ---
 
