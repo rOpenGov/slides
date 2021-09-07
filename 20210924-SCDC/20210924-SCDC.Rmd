@@ -22,8 +22,8 @@ class: inverse, center, middle
 # Brief history
 
 - Started in 2010
-- Entry in Apps4Finland competition (as a winning team)
-- Core team: Leo Lahti, Markus Kainu, Joona Lehtomäki, Juuso Parkkinen
+- Entry in Apps4Finland competition
+- Core team: Leo Lahti, Markus Kainu, Joona Lehtomäki, Juuso Paananen
 
 ---
 
@@ -38,6 +38,7 @@ class: center, middle
 # What is Open Data?
 
 > “Open means anyone can freely access, use, modify, and share for any purpose (subject, at most, to requirements that preserve provenance and openness).”
+
 
 > “Open data and content can be freely used, modified, and shared by anyone for any purpose”<sup>1</sup>
 
@@ -86,6 +87,8 @@ OECD open governmental data analysis includes the following categories:
 - [ ] public tender databases
 - [x] **geographic information**
   - geofi
+  - regions
+  - giscoR
   - helsinki
   - turku<sup>1</sup>
 - [ ] legal information
@@ -98,7 +101,8 @@ OECD open governmental data analysis includes the following categories:
   - pxweb 
   - sotkanet
   - eurostat
-  - hetu
+  - hetu, sweidnumber
+  - iotables
   - openthl<sup>1</sup>
   - *vipunen*<sup>2</sup>
 - [x] **transport information** 
@@ -113,13 +117,74 @@ OECD open governmental data analysis includes the following categories:
 ]
 
 ---
-
-
-
----
 class: inverse, center, middle
 
-# Get Started
+# Another perspectives of open
+## Open means transparent
+## Open means participatory
+
+---
+
+# Open government, open society?
+
+- Government: "Of the people, by the people, for the people"?<sup>1</sup>
+
+--
+
+- "Government that is wholly accountable and responsive to its citizens, and in which political decision-making is entirely transparent" (Karl Popper (2013) in *The Open Society and its enemies*, according to Pomerantz and Peek (2016))<sup>2</sup>
+
+--
+
+  - Inspiration to Open Society Foundations, which understands society as more than its government and its citizens<sup>2</sup>
+
+.footnote[
+[1] Lincoln, 1863
+
+[2] Pomerantz, J. & Peek R. (2016). "Fifty shades of open", First Monday, Volume 21, Number 5 - 2 May 2016
+https://firstmonday.org/ojs/index.php/fm/article/download/6360/5460, http://dx.doi.org/10.5210/fm.v21i5.6360
+]
+
+---
+
+# Open means participatory
+
+- "information about what the government is doing is meaningless without the **ability** for citizens to then **act on that information to exert influence on the government**"<sup>1</sup>
+
+--
+
+- Two crucial points:
+  - **Ability to utilize information**: Not everyone should need to go through documentation for different APIs to be able to access it 
+      - <u>This concerns us</u>
+  - **Will to act**: Intrinsic motivation to make a change towards whichever goal the individual deems important
+      - <u>This does not concern us</u>, as individual leanings or goals are not our concern?
+      - However, generally speaking we want to encourage and empower people to act
+
+.footnote[
+[1] Pomerantz, J. & Peek R. (2016).
+]
+
+---
+
+# Nods towards the fourth estate
+
+Packages related to media:
+- rsunlight - Interface to Sunlight Foundation APIs 
+- RPublica - ProPublica API client
+- pollstR - HuffPost Pollster API
+- rtimes - New York Times APIs
+
+---
+
+# International (Non-Finnish) outlooks
+
+Packages with Non-Finnish focus:
+- rustfare - Russian Federation open welfare data
+- ogdindiar - Data from Open Government Data Platform - India
+- federalregister - U.S. Federal Register API
+- mpg - Fuel economy data from FuelEconomy.gov
+- usbroadband - Data from U.S. Broadband Map
+- recalls - U.S. recall data from Food and Drug Administration (food and drug recalls), National Highway Traffic Safety Administration (car recalls), Consumer Product Safety Commission (product recalls)
+- hansard - data from UK Parliament API
 
 ---
 
