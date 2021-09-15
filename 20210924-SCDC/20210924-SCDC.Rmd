@@ -23,7 +23,7 @@ class: inverse, center, middle
 
 - Started in 2010
 - Entry in Apps4Finland competition
-- Core team: Leo Lahti, Markus Kainu, Joona Lehtomäki, Juuso Paananen
+- Core team: Leo Lahti, Markus Kainu, Joona Lehtomäki, Juuso Parkkinen
 
 ---
 
@@ -35,7 +35,7 @@ class: inverse, center, middle
 
 class: center, middle
 
-# What is Open Data?
+# Open Data
 
 > “Open means anyone can freely access, use, modify, and share for any purpose (subject, at most, to requirements that preserve provenance and openness).”
 
@@ -47,38 +47,45 @@ class: center, middle
 ]
 
 ---
+
 class: center, middle
 
-# What is Open Government Data?
+# (Open) Government Data
 
 >"Government data: is any data and information produced or commissioned by public bodies."<sup>1</sup>
 
 Open Government Data: See above & See Open Data
 
 .footnote[
-[1] [Ubaldi, B. (2013), "Open Government Data: Towards Empirical Analysis of Open Government Data Initiatives", OECD Working Papers on Public Governance, No. 22, OECD Publishing, Paris, https://doi.org/10.1787/5k46bj4f03s7-en.](https://doi.org/10.1787/5k46bj4f03s7-en.)
+[1] [Ubaldi, B. (2013), "Open Government Data: Towards Empirical Analysis of Open Government Data Initiatives", OECD Working Papers on Public Governance, No. 22, OECD Publishing, Paris, https://doi.org/10.1787/5k46bj4f03s7-en](https://doi.org/10.1787/5k46bj4f03s7-en)
 ]
 
 ---
 
 # Examples of Open Government Data
 
-OECD open governmental data analysis includes the following categories:
+OECD open governmental data analysis includes the following categories<sup>1</sup>:
 - business information (Chamber of Commerce information, official business)
 - registers, patent and trademark information, public tender databases
 - geographic information (address information, aerial photos, buildings, cadastral or land registry data, geodetic networks, hydrographical data, topographic information)
 - legal information
 - meteorological information (climate data, climate models, weather forecasts)
 - social data (various types of statistics on economics, employment, health, population, public administration)
-- transport information (traffic congestion, work on roads, public transport, vehicle registration)<sup>1</sup>
+- transport information (traffic congestion, work on roads, public transport, vehicle registration)
 
 .footnote[
-[1] Ubaldi, B. (2013) p. 6.
+[1] List from Ubaldi, B. (2013) p. 6.
 ]
 
 ---
 
-# What is already done?
+class: inverse, center, middle
+
+# Things done, things left to do
+
+---
+
+# Packages for Finnish and EU open data by category
 
 .pull-left[
 - [ ] business information
@@ -90,7 +97,7 @@ OECD open governmental data analysis includes the following categories:
   - regions
   - giscoR
   - helsinki
-  - turku<sup>1</sup>
+  - *turku*<sup>1</sup>
 - [ ] legal information
 - [x] **meteorological information**
   - fmi2
@@ -103,10 +110,10 @@ OECD open governmental data analysis includes the following categories:
   - eurostat
   - hetu, sweidnumber
   - iotables
-  - openthl<sup>1</sup>
+  - *openthl*<sup>1</sup>
   - *vipunen*<sup>2</sup>
 - [x] **transport information** 
-  - turku[1]
+  - *turku*<sup>1</sup>
   - *digitransit*<sup>2</sup>
 ]
 
@@ -117,13 +124,21 @@ OECD open governmental data analysis includes the following categories:
 ]
 
 ---
+
 class: inverse, center, middle
 
-# Another perspectives of open
+# Additional perspectives for openness<sup>1</sup>
 ## Open means transparent
 ## Open means participatory
 
+.footnote[
+[1] From Pomerantz, J. & Peek R. (2016). "Fifty shades of open", First Monday, Volume 21, Number 5 - 2 May 2016
+https://firstmonday.org/ojs/index.php/fm/article/download/6360/5460, http://dx.doi.org/10.5210/fm.v21i5.6360
+]
+
 ---
+
+exclude: true
 
 # Open government, open society?
 
@@ -146,6 +161,8 @@ https://firstmonday.org/ojs/index.php/fm/article/download/6360/5460, http://dx.d
 
 ---
 
+exclude: true
+
 # Open means participatory
 
 - "information about what the government is doing is meaningless without the **ability** for citizens to then **act on that information to exert influence on the government**"<sup>1</sup>
@@ -165,6 +182,8 @@ https://firstmonday.org/ojs/index.php/fm/article/download/6360/5460, http://dx.d
 
 ---
 
+exclude: true
+
 # Nods towards the fourth estate
 
 Packages related to media:
@@ -174,6 +193,8 @@ Packages related to media:
 - rtimes - New York Times APIs
 
 ---
+
+exclude: true
 
 # International (Non-Finnish) outlooks
 
