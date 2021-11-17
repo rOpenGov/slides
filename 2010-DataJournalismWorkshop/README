@@ -1,0 +1,9 @@
+Leo / 26.1.2010
+
+Run this in R (tested in TKK computer system) to produce the handouts:
+Sweave("handout.Rnw")
+
+Rpresentation.sla template was written in 'scribus'
+
+
+
